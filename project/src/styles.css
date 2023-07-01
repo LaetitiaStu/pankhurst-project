@@ -1,5 +1,64 @@
-h1 {
+body {
   font-family: "Poppins";
+  background-color: #5e488c;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Suffragettes%2C_England%2C_1908.JPG/440px-Suffragettes%2C_England%2C_1908.JPG");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 200px 0;
+}
+h1 {
   font-weight: 700;
   font-size: 96px;
+  margin: 60px 0 30px;
+  line-height: 1.5;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 60px;
+  margin: 0 0 30px;
+  padding: 10px;
+}
+
+header a {
+  padding: 10px 20px;
+  background-color: #5e488c;
+  color: white;
+  box-shadow: 12px 18px 20px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+  text-transform: capitalize;
+  margin: 20px 0;
+}
+
+header a:hover {
+  border: solid 1px #5e488c;
+  box-shadow: inset 7px 7px 10px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 900px) {
+  header {
+    padding: 30px 0;
+  }
+
+  h1 {
+    font-size: 55px;
+    margin: 30px 0 10px;
+    line-height: 1;
+  }
+
+  h2 {
+    font-size: 40px;
+    margin: 0 0 20px;
+  }
 }
