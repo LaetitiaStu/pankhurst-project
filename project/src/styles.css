@@ -46,6 +46,56 @@ header a:hover {
   box-shadow: inset 7px 7px 10px rgba(0, 0, 0, 0.3);
 }
 
+footer {
+  color: white;
+  padding: 100px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(
+      rgba(94, 72, 140, 0.7),
+      rgba(94, 72, 140, 0.7)
+    ),
+    url("https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Suffragettes%2C_England%2C_1908.JPG/440px-Suffragettes%2C_England%2C_1908.JPG");
+}
+
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  margin: 20px;
+}
+
+footer h3 {
+  font-weight: 500;
+}
+
+footer p {
+  font-size: 14px;
+}
+
+footer li {
+  font-size: 14px;
+  list-style: none;
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #5e488c;
+  text-decoration: underline;
+}
+
 @media (max-width: 900px) {
   header {
     padding: 30px 0;
