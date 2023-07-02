@@ -72,6 +72,7 @@ main p {
 
 .img-responsive {
   max-width: 100%;
+  display: block;
 }
 
 footer {
@@ -86,9 +87,62 @@ footer {
 }
 
 section {
-  max-width: 1000px;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 100px;
+}
+
+section.secondary {
+  background-color: #e0d8f1fa;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.card {
+  background-color: white;
+  padding: 10px;
+  box-shadow: 6px 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 30px 0;
+}
+
+.card h4 {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.card h5 {
+  margin-bottom: 0;
+}
+
+.card p {
+  opacity: 0.6;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.card .button {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 13px;
+  text-align: center;
+  text-decoration: none;
+  padding: 5px 10px;
+  background-color: #5e488c;
+  color: white;
+  margin-top: 20px;
+  transition: 100ms ease-in-out;
+}
+
+.card .button:hover {
+  border: solid 1px #5e488c;
+  background-color: white;
+  color: #5e488c;
+}
+
+.card-body {
+  padding: 0 20px 10px;
 }
 
 .grid {
@@ -102,6 +156,10 @@ section {
 
 .grid-2-col {
   grid-template-columns: 1fr 1fr;
+}
+
+.grid-3-equal-col {
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 footer h3 {
