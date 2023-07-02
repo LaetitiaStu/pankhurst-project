@@ -71,7 +71,7 @@ main p {
 }
 
 .img-responsive {
-  max-width: 100%;
+  width: 100%;
   display: block;
 }
 
@@ -145,6 +145,19 @@ section.secondary {
   padding: 0 20px 10px;
 }
 
+.card .grid {
+  grid-gap: 0;
+}
+
+.card .embed {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+
+.card .grid-2-col img {
+  aspect-ratio: 1/1;
+}
+
 .grid {
   display: grid;
   grid-gap: 20px;
@@ -211,5 +224,13 @@ footer a:hover {
 
   .grid {
     grid-template-columns: 1fr;
+  }
+
+  .card-header img {
+    display: none;
+  }
+
+  .embed {
+    aspect-ratio: 16/9;
   }
 }
